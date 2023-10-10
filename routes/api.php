@@ -17,6 +17,5 @@ use App\Http\Controllers\UserController;
 Route::middleware('auth:sanctum')->get('/user', function (Request $request) {
     return $request->user();
 });
-
 Route::POST('register',[UserController::class,'register']);
 Route::POST('login',[UserController::class,'login']);
